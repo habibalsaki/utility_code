@@ -1,23 +1,8 @@
-class Person:
-    def __init__(self,name):
-        self.name = name
+import logging
 
-    def printinfo(self):
-        print(f'Person name is {self.name}')
+logging.basicConfig(format='%(asctime)s %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s',datefmt='%d-%m-%Y:%H:%M:%S',level=logging.DEBUG,filename='logs.txt')
 
-class Teacher(Person):
-    def __init__(self,name,dept):
-        super().__init__(name)
-        self.dept = dept
+logger = logging.getLogger(__name__)
 
-    def printinfo(self):
-        print(f'Person name is {self.name} from child class')
-
-    def printdeptinfo(self):
-        print(f'{self.name} is teaching in {self.dept}')
-
-
-jami = Teacher('jami','cse')
-
-jami.printdeptinfo()
-jami.printinfo()
+logger.debug("Hello this is debug")
+logger.critical("Hello this is critical")

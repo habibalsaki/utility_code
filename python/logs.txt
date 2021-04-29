@@ -1,0 +1,4 @@
+21-02-2021:17:16:43 DEBUG    [notes.py:7] Hello this is debug
+21-02-2021:17:16:43 CRITICAL [notes.py:8] Hello this is critical
+21-02-2021:17:17:17 DEBUG    [notes.py:7] Hello this is debug
+21-02-2021:17:17:17 CRITICAL [notes.py:8] Hello this is critical
